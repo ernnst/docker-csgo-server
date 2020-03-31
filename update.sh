@@ -1,3 +1,3 @@
 #!/bin/sh
-cd $HOME/hlserver
+cd $HOME/steam
 ./steamcmd.sh +runscript csgo_ds.txt

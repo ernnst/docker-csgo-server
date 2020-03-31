@@ -3,7 +3,7 @@ MAINTAINER Max Gonzih <gonzih at gmail dot com>
 
 ENV USER csgo
 ENV HOME /home/$USER
-ENV SERVER $HOME/hlserver
+ENV SERVER $HOME/steam
 
 RUN apt-get -y update \
     && apt-get -y upgrade \
@@ -35,6 +35,6 @@ RUN curl http://media.steampowered.com/client/steamcmd_linux.tar.gz | tar -C $SE
 
 EXPOSE 27015/udp
 
-WORKDIR /home/$USER/hlserver
+WORKDIR /home/$USER/steam
 ENTRYPOINT ["./csgo.sh"]
 CMD ["-console" "-usercon" "+game_type" "0" "+game_mode" "1" "+mapgroup" "mg_active" "+map" "de_cache"]
