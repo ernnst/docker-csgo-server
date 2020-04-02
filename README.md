@@ -44,7 +44,7 @@ Add `+sv_lan 1` to `docker run` command.
 Visit [this](https://steamcommunity.com/dev/managegameservers) page to generate a game server login token (GSLT).
 
 Use 730 as the App ID and add any Memo to identify the server:
-![Steam](https://raw.githubusercontent.com/ernnst/ansible-csgo/master/files/1.png)
-Copy `Login Token`
-![Steam](https://raw.githubusercontent.com/ernnst/ansible-csgo/master/files/2.png)
-Add `-net_port_try 1 +sv_setsteamaccount LOGIN_TOKEN` to `docker run` command to authenticate your server to Steam.
+<img src="https://i.imgur.com/RdVP16G.png" width="800">
+
+Copy `Login Token`. Add `-net_port_try 1 +sv_setsteamaccount LOGIN_TOKEN` to `docker run` command to authenticate your server to Steam.
+<img src="https://i.imgur.com/wvjcEq7.png" width="800">
